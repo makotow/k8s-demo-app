@@ -23,7 +23,7 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          args: ['-text="hello world v1"']
+          args: ['-text="hello world v2"']
           ports:
             - name: http
               containerPort: 5678
